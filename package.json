@@ -28,8 +28,8 @@
     "prettier": "^2.7.1"
   },
   "scripts": {
-    "build": "gatsby build",
-    "build:dist": "npm run clean:dist && mkdir dist && cp -r src/* dist && cross-env NODE_ENV=test babel dist --out-dir dist --source-maps inline",
+    "build:gatsby": "gatsby build",
+    "build": "npm run clean:dist && mkdir dist && cp -r src/* dist && cross-env NODE_ENV=test babel dist --out-dir dist --source-maps inline",
     "clean:dist": "rm -rf dist",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
